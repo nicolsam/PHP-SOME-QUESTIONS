@@ -73,7 +73,7 @@ class Questoes {
             'num6' => 0
         ];
 
-        for($i = 0; $i <= $numberOfTimes; $i++) {
+        for($i = 0; $i < $numberOfTimes; $i++) {
             $retorno = self::JogaDado();
 
             if($retorno === 1) {
