@@ -57,4 +57,45 @@ class Questoes {
     public static function JogaDado() {
         return rand(1, 6);
     }
+
+    /** 
+     * Use a função da questão passada e lance o dado 1 milhão de vezes.
+     * Conte quantas vezes cada número saiu. A probabilidade deu certo?
+     * Ou seja, a porcentagem dos números foi parecida?
+    */
+    public static function Questao6($numberOfTimes) {
+        $contagem = [
+            'num1' => 0,
+            'num2' => 0,
+            'num3' => 0,
+            'num4' => 0,
+            'num5' => 0,
+            'num6' => 0
+        ];
+
+        for($i = 0; $i <= $numberOfTimes; $i++) {
+            $retorno = self::JogaDado();
+
+            if($retorno === 1) {
+                $contagem['num1']++;
+            }
+            if($retorno === 2) {
+                $contagem['num2']++;
+            }
+            if($retorno === 3) {
+                $contagem['num3']++;
+            }
+            if($retorno === 4) {
+                $contagem['num4']++;
+            }
+            if($retorno === 5) {
+                $contagem['num5']++;
+            }
+            if($retorno === 6) {
+                $contagem['num6']++;
+            }
+        }
+
+        return $contagem;
+    }
 }

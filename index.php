@@ -1,5 +1,8 @@
 <?php
 
+error_reporting(E_ALL);
+ini_set('display_errors', '1');
+
 require __DIR__ . '/vendor/autoload.php';
 
 use App\Questao\Questoes;
@@ -35,3 +38,14 @@ echo '</br>';
 // Executando Quinta questão
 echo 'Quinta Questão: </br>';
 echo 'O número do dado retornado é '. Questoes::JogaDado();
+
+echo '</br>';
+echo '</br>';
+
+// Executando Quinta questão
+echo 'Sexta Questão: </br>';
+echo 'Contagem: '; 
+
+echo '<pre>';
+print_r(Questoes::Questao6(5)); // Por questões de performance decidi deixar com escolhesse o número de vezes que o dado será lançado
+echo '</pre>';
