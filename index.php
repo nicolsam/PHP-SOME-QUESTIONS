@@ -42,7 +42,7 @@ echo 'O número do dado retornado é '. Questoes::JogaDado();
 echo '</br>';
 echo '</br>';
 
-// Executando Quinta questão
+// Executando Sexta questão
 echo 'Sexta Questão: </br>';
 
 echo '<pre>';
@@ -52,7 +52,13 @@ echo '</pre>';
 echo '</br>';
 echo '</br>';
 
-// Executando Quinta questão
+// Executando Sétima questão
 echo 'Sétima Questão: </br>';
 Questoes::Questao7(7);
 
+echo '</br>';
+echo '</br>';
+
+// Executando Oitava questão
+echo 'Oitava Questão: </br>';
+echo Questoes::Questao8(10) ? 'O número é impar' : 'O número é par';
