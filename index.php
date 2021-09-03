@@ -25,6 +25,13 @@ echo 'O maior número é '. Questoes::Questao3(10, 50, 5);
 echo '</br>';
 echo '</br>';
 
-// Executando terceira questão
-echo 'Terceira Questão: </br>';
-echo 'O maior número é '. Questoes::Questao4(10, 50, 24);
+// Executando Quarta questão
+echo 'Quarta Questão: </br>';
+echo 'O menor número é '. Questoes::Questao4(10, 50, 24);
+
+echo '</br>';
+echo '</br>';
+
+// Executando Quinta questão
+echo 'Quinta Questão: </br>';
+echo 'O número do dado retornado é '. Questoes::JogaDado();

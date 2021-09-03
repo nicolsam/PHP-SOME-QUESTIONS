@@ -48,4 +48,13 @@ class Questoes {
 
         return self::Questao2($retorno, $val3);
     }
+
+    /**
+     * Crie uma função em linguagem PHP chamada JogaDado() que retorna,
+     * através de sorteio (buscar na internet como gerar números
+     * aleatórios em PHP), um número de 1 até 6.
+     */
+    public static function JogaDado() {
+        return rand(1, 6);
+    }
 }
