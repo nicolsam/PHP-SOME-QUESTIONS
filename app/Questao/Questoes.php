@@ -2,6 +2,8 @@
 
 namespace App\Questao;
 
+use App\Utils\Sexta;
+
 class Questoes {
 
     /**
@@ -96,6 +98,15 @@ class Questoes {
             }
         }
 
+        $gap = Sexta::VerifyGap($contagem, $numberOfTimes);
+
+        if(!$gap) {
+            echo 'Os números não são parecidos </br>';
+        } else {
+            echo 'Os números são parecidos </br>';
+        
+        }
+        echo 'Contagem: </br>'; 
         return $contagem;
     }
 }
