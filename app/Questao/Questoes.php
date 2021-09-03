@@ -38,4 +38,14 @@ class Questoes {
 
         return self::Questao1($retorno, $val3);
     }
+
+    /**
+     * Crie uma função em linguagem PHP que receba 3 números e retorne
+     * o menor valor, use a função da questão 2
+     * */
+    public static function Questao4($val1, $val2, $val3) {
+        $retorno = self::Questao2($val1, $val2);
+
+        return self::Questao2($retorno, $val3);
+    }
 }

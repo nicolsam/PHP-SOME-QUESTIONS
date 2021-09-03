@@ -21,3 +21,10 @@ echo '</br>';
 // Executando terceira questão
 echo 'Terceira Questão: </br>';
 echo 'O maior número é '. Questoes::Questao3(10, 50, 5);
+
+echo '</br>';
+echo '</br>';
+
+// Executando terceira questão
+echo 'Terceira Questão: </br>';
+echo 'O maior número é '. Questoes::Questao4(10, 50, 24);
