@@ -10,10 +10,10 @@ class Questoes {
     */
     public static function Questao1($val1, $val2) {
         if($val1 > $val2) {
-            return 'O maior número é '. $val1;
+            return $val1;
         }
 
-        return 'O maior número é ' . $val2;
+        return $val2;
     }
 
     /**
@@ -22,9 +22,20 @@ class Questoes {
     */
     public static function Questao2($val1, $val2) {
         if($val1 < $val2) {
-            return 'O menor número é '. $val1;
+            return $val1;
         }
 
-        return 'O menor número é '. $val2;
+        return $val2;
+    }
+
+
+    /**
+     * Crie uma função em linguagem PHP que receba 3 números e retorne
+     * o maior valor, use a função da questão 1
+     * */
+    public static function Questao3($val1, $val2, $val3) {
+        $retorno = self::Questao1($val1, $val2);
+
+        return self::Questao1($retorno, $val3);
     }
 }
