@@ -109,4 +109,18 @@ class Questoes {
         echo 'Contagem: </br>'; 
         return $contagem;
     }
+
+    /**
+     * Crie uma função em linguagem PHP que calcule o fatorial de um
+     * número fornecido
+     */
+    public static function Questao7($number) {
+        $fact = 1;
+
+        for($i = $number; $i >= 1; $i--) {
+            $fact = $fact * $i;
+        }
+
+        echo 'O fatorial do número ' . $number . ' é ' . $fact;
+    }
 }

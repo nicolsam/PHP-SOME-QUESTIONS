@@ -48,3 +48,11 @@ echo 'Sexta Questão: </br>';
 echo '<pre>';
 print_r(Questoes::Questao6(1000)); // Por questões de performance decidi deixar com escolhesse o número de vezes que o dado será lançado
 echo '</pre>';
+
+echo '</br>';
+echo '</br>';
+
+// Executando Quinta questão
+echo 'Sétima Questão: </br>';
+Questoes::Questao7(7);
+
